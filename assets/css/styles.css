@@ -10,3 +10,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.contact-bg {
+  background-image: url('../img/contact.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
