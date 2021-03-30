@@ -4,3 +4,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.menu-bg {
+  background-image: url('../img/menu.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
