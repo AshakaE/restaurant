@@ -1,0 +1,6 @@
+.top-bg {
+  background-image: url('../img/rest-bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
