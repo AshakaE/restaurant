@@ -1,6 +1,7 @@
 const content = document.getElementById("content");
 const homeDiv = document.createElement("div");
 const menuDiv = document.createElement("div");
+const contactDiv = document.createElement("div");
 
 const homeFunc = () => {
   const homeDivOne = document.createElement("div");
@@ -11,42 +12,12 @@ const homeFunc = () => {
   homeDiv.id = "home";
   homeDiv.classList.add(
     "top-bg",
-    "min-h-screen",
-    "flex",
-    "justify-center",
-    "items-center",
-    "p-4"
+    "homeContainer"
   );
-  homeDivOne.classList.add(
-    "text-center",
-    "bg-yellow-600",
-    "p-3",
-    "rounded-lg",
-    "bg-opacity-60",
-    "flex",
-    "justify-center",
-    "flex-col"
-    );
-  homeDivTwo.classList.add(
-    "bg-gray-600",
-    "bg-opacity-80",
-    "rounded-lg",
-    "p-3",
-    "sm:p-5"
-  );
-  heading.classList.add(
-    "text-2xl",
-    "md:text-3xl",
-    "lg:text-5xl",
-    "font-bold",
-    "uppercase",
-    "pb-10"
-  );
-  paragragh.classList.add(
-    "sm:text-md",
-    "md:text-xl",
-    "lg:text-2xl"
-  )
+  homeDivOne.classList.add("homeContent",);
+  homeDivTwo.classList.add("homeBox");
+  heading.classList.add("homeTitle");
+  paragragh.classList.add("homePg");
   
   heading.textContent = "Welcome to Alorr!";
   paragragh.textContent =
@@ -66,97 +37,42 @@ const menuFunc = () => {
   const container = document.createElement("div");
   const gridBox = document.createElement("div");
   const boxOne = document.createElement("div");
+  const boxTwo = document.createElement("div");
+  const boxThree = document.createElement("div");
+  const boxFour = document.createElement("div");
   const boxOneContainer = document.createElement("div");
-  const boxImg = document.createElement("img");
+  const boxTwoContainer = document.createElement("div");
+  const boxThreeContainer = document.createElement("div");
+  const boxFourContainer = document.createElement("div");
+  const boxImgOne = document.createElement("img");
+  const boxImgTwo = document.createElement("img");
   const title = document.createElement("h4");
   const paragraph = document.createElement("p");
-
-  // const boxTwo = document.createElement("div");
-  // const boxThree = document.createElement("div");
-  // const boxFour = document.createElement("div");
-  // const boxDesign = ["flex", "items-center",
-  //   "bg-gray-700",
-  //   "bg-opacity-60",
-  //   "rounded-lg",
-  //   "p-3" ;
-
+  const paragraphText = "Doloremque omnis exercitationem nulla ratione perferendis, quam, incidunt earum assumenda eius.";
   menuDiv.id = "menu";
   menuDiv.classList.add(
     "menu-bg",
-    "min-h-screen",
-    "flex",
-    "justify-center",
-    "items-center",
-    "flex-col"
+    "menuContainer"
   );
   heading.textContent = "Special menu";
-  heading.classList.add(
-    "pb-10",
-    "text-lg",
-    "sm:text-2xl",
-    "md:text-4xl",
-    "font-semibold",
-    "uppercase"
-  );
-  container.classList.add("p-5");
-  gridBox.classList.add(
-    "grid",
-    "grid-cols-1",
-    "sm:grid-cols-2",
-    "gap-3",
-    "p-4",
-    "md:p-8",
-    "bg-opacity-50",
-    "bg-yellow-600",
-    "rounded-lg"
-  );
-  boxOneContainer.classList.add("pl-4")
-  boxOne.classList.add(
-    "flex",
-    "items-center",
-    "bg-gray-700",
-    "bg-opacity-60",
-    "rounded-lg",
-    "p-3"
-  );
-  boxImg.src = "../assets/img/6.jpg";
-  boxImg.alt = "Peppered Rice";
-  boxImg.classList.add(
-    "h-20",
-    "w-20",
-    "sm:h-32",
-    "sm:w-32",
-    "md:h-40",
-    "object-cover",
-    "md:w-40",
-    "rounded-3xl",
-    "lg:h-60",
-    "lg:w-60"
-  );
+  heading.classList.add("menuTitle");
+  container.classList.add("menu-v");
+  gridBox.classList.add("menuGrid");
+  boxOneContainer.classList.add("grid-iv")
+  boxOne.classList.add("gridItem");
+  boxImgOne.src = "../assets/img/6.jpg";
+  boxImgOne.alt = "Peppered Rice";
+  boxImgOne.classList.add("gridImage");
   title.textContent = "Peppered Rice";
-  title.classList.add(
-    "text-lg",
-    "sm:text-xl",
-    "md:text-3xl",
-    "font-bold"
-  );
-  paragraph.textContent =
-    "Doloremque omnis exercitationem nulla ratione perferendis, quam, incidunt earum assumenda eius.";
-  paragraph.classList.add(
-    "text-xs",
-    "sm:text-sm",
-    "md:text-md",
-    "lg:text-2xl",
-    "mt-4"
-  );
-  // gridBox.appendChild(boxFour);
-  // gridBox.appendChild(boxThree);
-  // gridBox.appendChild(boxTwo);
+  title.classList.add("gridTitle");
+  paragraph.textContent = paragraphText;
+  paragraph.classList.add("gridPg");
+
   menuDiv.appendChild(heading);
   menuDiv.appendChild(container);
   container.appendChild(gridBox);
   gridBox.appendChild(boxOne);
-  boxOne.appendChild(boxImg);
+  boxOne.appendChild(boxImgOne);
   boxOne.appendChild(boxOneContainer);
   boxOneContainer.appendChild(title);
   boxOneContainer.appendChild(paragraph);
@@ -164,10 +80,44 @@ const menuFunc = () => {
   return menuDiv
 }
 
+const contactFunc = () => {
+  const contactDivOne = document.createElement("div");
+  const contactDivTwo = document.createElement("div");
+  const title = document.createElement("h2");
+  const pOne = document.createElement("p");
+  const pTwo = document.createElement("p");
+  const sOne = document.createElement("span");
+  const sTwo = document.createElement("span");
+  
+  contactDiv.id = "contact";
+  contactDiv.classList.add("contact-bg", "contactContainer");
+  contactDivOne.classList.add("contactContent")
+  contactDivTwo.classList.add("contactBox");
+  title.classList.add("contactTitle");
+  title.textContent = "Contact us"
+  sOne.classList.add("contactSpan");
+  sOne.textContent = "alorr@alorr.com";
+  sTwo.classList.add("contactSpan");
+  sTwo.textContent = "+234-111-000-17";
+  pOne.textContent = "Email: ";
+  pTwo.textContent = "Phone: ";
+
+  contactDiv.appendChild(contactDivOne);
+  contactDivOne.appendChild(contactDivTwo);
+  contactDivTwo.appendChild(title);
+  contactDivTwo.appendChild(pOne);
+  contactDivTwo.appendChild(pTwo);
+  pOne.appendChild(sOne);
+  pTwo.appendChild(sTwo);
+
+  return contactDiv
+}
+
 const showContent = () => {
 
   content.appendChild(homeFunc(homeDiv));
   content.appendChild(menuFunc(menuDiv));
+  content.appendChild(contactFunc(contactDiv));
 };
 
 showContent();
