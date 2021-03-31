@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "cross-env TAILWIND_MODE=build postcss ./assets/css/tailwind/tailwind.css  -o ./assets/css/build.css --verbose",
-    "dev": "cross-env TAILWIND_MODE=watch postcss build ./assets/css/tailwind/tailwind.css -o ./assets/css/build.css -w --verbose"
+    "dev": "cross-env TAILWIND_MODE=watch postcss build ./assets/css/tailwind/tailwind.css -o ./assets/css/build.css -w --verbose",
+    "serve": "npx webpack --watch"
   },
   "dependencies": {
     "@tailwindcss/jit": "^0.1.17",
