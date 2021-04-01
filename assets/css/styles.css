@@ -18,3 +18,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.tabs {
+  position: fixed;
+}

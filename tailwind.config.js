@@ -1,6 +1,6 @@
 module.exports = {
-  purge: ["./dist/**/*.html"],
-  darkMode: "media",
+  purge: ['./dist/**/*.html'],
+  darkMode: 'media',
   theme: {
     extend: {},
   },

@@ -12,6 +12,8 @@
 
 TBA
 
+npm install --save-dev eslint@7.11.x eslint-config-airbnb@18.1.x eslint-plugin-import@2.22.x eslint-plugin-jsx-a11y@6.2.x eslint-plugin-react@7.20.x eslint-plugin-react-hooks@2.5.x babel-eslint@10.1.x
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
