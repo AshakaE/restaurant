@@ -30,3 +30,5 @@ const contactFunc = (contactDiv) => {
 
   return contactDiv
 }
+
+export default contactFunc

@@ -1,87 +1,84 @@
+// import { info } from "autoprefixer";
+
+function boxElement(){
+  let box = [];
+  let pic = true;
+    for (let i = 0; i < 4; i += 1) {
+      const boxContent = boxInfo().infoDiv
+      boxContent.appendChild(boxInfo().infoTitle);
+      boxContent.appendChild(boxInfo().infoSub);
+      let any = document.createElement("div");
+      any.classList.add("gridItem");
+      if (pic) {
+        any.appendChild(image().imgOne);
+        pic = false
+      } else {
+        any.appendChild(image().imgTwo);
+        pic = true
+      }
+      any.appendChild(boxInfo().infoDiv);
+      any.appendChild(boxContent);
+      box.push(any)
+      // console.log(box[i]);
+    };
+    console.log(box)
+    return {box};
+  };
+
+const image = () => {
+  let imgOne = document.createElement("img");
+  let imgTwo = document.createElement("img");
+  imgOne.classList.add("gridImage");
+  imgTwo.classList.add("gridImage");
+  imgOne.src = "../assets/img/6.jpg";
+  imgTwo.src = "../assets/img/11.png";
+
+  return {imgOne, imgTwo};
+};
+
+const boxInfo = () => {
+  const infoDiv = document.createElement("div");
+  const infoTitle = document.createElement("h4");
+  const infoSub = document.createElement("p");
+  infoDiv.classList.add("grid-iv");
+  infoTitle.classList.add("gridTitle");
+  infoTitle.textContent = "Peppered Rice";
+  infoSub.classList.add("gridPg");
+  infoSub.textContent = "Doloremque omnis exercitationem nulla ratione perferendis, quam, incidunt earum assumenda eius.";
+  return {infoDiv, infoTitle, infoSub};
+};
+
 const menuFunc = (menuDiv) => {
   const heading = document.createElement("h2");
   const container = document.createElement("div");
   const gridBox = document.createElement("div");
-  const boxOne = document.createElement("div");
-  const boxTwo = document.createElement("div");
-  const boxThree = document.createElement("div");
-  const boxFour = document.createElement("div");
-  const boxOneContainer = document.createElement("div");
-  const boxTwoContainer = document.createElement("div");
-  const boxThreeContainer = document.createElement("div");
-  const boxFourContainer = document.createElement("div");
-  const boxImgOne = document.createElement("img");
-  const boxImgTwo = document.createElement("img");
-  const titleOne = document.createElement("h4");
-  const titleTwo = document.createElement("h4");
-  const paragraph = document.createElement("p");
-  const paragraphText = "Doloremque omnis exercitationem nulla ratione perferendis, quam, incidunt earum assumenda eius.";
-
+  let box = boxElement()
+  box = Object.entries(box)
+  console.log(box)
+  box = box[0][1]
   menuDiv.id = "menu";
   menuDiv.classList.add(
     "menu-bg",
     "menuContainer"
   );
+  
   heading.textContent = "Special menu";
   heading.classList.add("menuTitle");
   container.classList.add("menu-v");
   gridBox.classList.add("menuGrid");
-
-  boxOne.classList.add("gridItem");
-  boxTwo.classList.add("gridItem");
-  boxThree.classList.add("gridItem");
-  boxFour.classList.add("gridItem");
-
-  boxImgOne.classList.add("gridImage");
-  boxImgTwo.classList.add("gridImage");
-
-  boxOneContainer.classList.add("grid-iv");
-  boxTwoContainer.classList.add("grid-iv");
-  boxThreeContainer.classList.add("grid-iv");
-  boxFourContainer.classList.add("grid-iv");
-
-  titleOne.textContent = "Peppered Rice";
-  titleOne.classList.add("gridTitle");
-
-  titleTwo.textContent = "Huevos Rotos";
-  titleTwo.classList.add("gridTitle");
-
-  paragraph.textContent = paragraphText;
-  paragraph.classList.add("gridPg");
-
-  boxImgOne.src = "../assets/img/6.jpg";
-  boxImgTwo.src = "../assets/img/11.png";
-
-  boxImgOne.alt = "Peppered Rice";
-  boxImgTwo.alt = "Huevos Rotos";
-
+  // console.log(box);
+  // box.forEach(element => {  
+  //   gridBox.appendChild(element);
+  // });
   menuDiv.appendChild(heading);
   menuDiv.appendChild(container);
   container.appendChild(gridBox);
+  console.log(box)
+  for (let a = 0; a < box.length; a += 1) {
 
-  gridBox.appendChild(boxOne);
-  boxOne.appendChild(boxImgOne);
-  boxOne.appendChild(boxOneContainer);
-  boxOneContainer.appendChild(titleOne);
-  boxOneContainer.appendChild(paragraph);
-
-  // gridBox.appendChild(boxTwo);
-  // boxTwo.appendChild(boxImgTwo);
-  // boxTwo.appendChild(boxTwoContainer);
-  // boxTwoContainer.appendChild(titleTwo);
-  // boxTwoContainer.appendChild(paragraph);
-
-  // gridBox.appendChild(boxThree);
-  // boxThree.appendChild(boxImgOne);
-  // boxThree.appendChild(boxThreeContainer);
-  // boxThreeContainer.appendChild(titleTwo);
-  // boxThreeContainer.appendChild(paragraph);
-  
-  // gridBox.appendChild(boxFour);
-  // boxFour.appendChild(boxImgTwo);
-  // boxFour.appendChild(boxFourContainer);  
-  // boxFourContainer.appendChild(titleOne);
-  // boxFourContainer.appendChild(paragraph);
-
+    gridBox.appendChild(box[a]); 
+  }
   return menuDiv
 }
+
+export default menuFunc
