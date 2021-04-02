@@ -1,3 +1,6 @@
+const content = document.getElementById('content');
+const homeDiv = document.createElement('div');
+
 const homeFunc = (homeDiv) => {
   const homeDivOne = document.createElement('div');
   const homeDivTwo = document.createElement('div');
@@ -26,4 +29,9 @@ const homeFunc = (homeDiv) => {
   return homeDiv;
 };
 
-export default homeFunc;
+const showHome = () => {
+  content.insertAdjacentElement('afterbegin', homeFunc(homeDiv));
+}
+
+
+export default showHome;

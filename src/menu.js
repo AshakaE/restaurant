@@ -1,3 +1,5 @@
+const content = document.getElementById('content');
+const menuDiv = document.createElement('div');
 
 const image = () => {
   const imgOne = document.createElement('img');
@@ -55,7 +57,7 @@ const menuFunc = (menuDiv) => {
   menuDiv.id = 'menu';
   menuDiv.classList.add(
     'menu-bg',
-    'menuContainer',
+    'menuContainer'
   );
   heading.textContent = 'Special menu';
   heading.classList.add('menuTitle');
@@ -71,4 +73,8 @@ const menuFunc = (menuDiv) => {
   return menuDiv;
 };
 
-export default menuFunc;
+// const showMenu = () => {
+//   content.insertAdjacentElement('afterbegin', menuFunc(menuDiv));
+// }
+
+export {menuFunc as showMenu};

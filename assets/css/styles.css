@@ -22,3 +22,11 @@
 .tabs {
   position: fixed;
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
