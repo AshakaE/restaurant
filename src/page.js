@@ -1,15 +1,14 @@
-
-import contactFunc from './contact';
-
-const content = document.getElementById('content');
-const contactDiv = document.createElement('div');
+import showContact from './contact';
+import showHome from './home';
+import showMenu from './menu';
+import showNav from './nav';
 
 showNav()
-// showMenu()
-const showContent = () => { 
-  content.appendChild(contactFunc(contactDiv));
 
-  return
-};
+const showContent = () => {
+  showContact()
+  showMenu()
+  showHome()
+}
 
-export {showNav, showMenu, showHome};
+export  { showNav, showContent};

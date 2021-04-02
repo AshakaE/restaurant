@@ -1,3 +1,6 @@
+const content = document.getElementById('content');
+const contactDiv = document.createElement('div');
+
 const contactFunc = (contactDiv) => {
   const contactDivOne = document.createElement('div');
   const contactDivTwo = document.createElement('div');
@@ -31,4 +34,8 @@ const contactFunc = (contactDiv) => {
   return contactDiv;
 };
 
-export default contactFunc;
+const showContact = () => {
+  content.insertAdjacentElement('afterbegin', contactFunc(contactDiv));
+}
+
+export default showContact;

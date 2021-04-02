@@ -73,8 +73,8 @@ const menuFunc = (menuDiv) => {
   return menuDiv;
 };
 
-// const showMenu = () => {
-//   content.insertAdjacentElement('afterbegin', menuFunc(menuDiv));
-// }
+const showMenu = () => {
+  content.insertAdjacentElement('afterbegin', menuFunc(menuDiv));
+}
 
-export {menuFunc as showMenu};
+export default showMenu;
