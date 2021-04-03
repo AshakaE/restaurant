@@ -9,10 +9,6 @@
 - CSS3
 - TailwindCSS
 
-## Live Demo
-
-[restaurant-js](https://ashakae.github.io/restaurant/)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -30,10 +26,9 @@ Node.js
 
 - open the `index.html` in dist folder
 
-
 ### Deployment
 
-Deployed to Gh pages
+[restaurant-js](https://ashakae.github.io/restaurant/)
 
 👤 **Ashaka Egerega**
 
