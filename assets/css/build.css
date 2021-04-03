@@ -711,6 +711,7 @@ video {
 	line-height: 1.75rem;
 	font-weight: 600;
 	text-transform: uppercase;
+  padding-top: 100px;
 }
 
 @media (min-width: 640px) {
