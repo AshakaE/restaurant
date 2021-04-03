@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-container {
+  @apply flex w-full justify-between pt-8 md:pt-16 text-xl sm:text-2xl md:text-3xl font-bold px-6;
+}
+
+.nav-style {
+  @apply flex justify-center w-1/3 pb-6 cursor-pointer hover:text-yellow-300 text-white;
+}
+
+.indicator {
+  @apply border-b-4 border-yellow-600;
+}
+
+.homeContainer {
+  @apply min-h-screen flex justify-center items-center;
+}
+
+.homeContent {
+  @apply text-center bg-yellow-600 p-3 rounded-lg bg-opacity-60 flex justify-center flex-col;
+}
+
+.homeBox {
+  @apply bg-gray-600 bg-opacity-80 rounded-lg p-3 sm:p-5;
+}
+
+.homeTitle {
+  @apply text-2xl md:text-3xl lg:text-5xl font-bold uppercase pb-10;
+}
+
+.homePg {
+  @apply sm:text-lg md:text-xl lg:text-2xl;
+}
+
+.menuContainer {
+  @apply min-h-screen flex justify-center items-center flex-col;
+}
+
+.menuTitle {
+  @apply pb-10 text-lg sm:text-2xl md:text-4xl font-semibold uppercase;
+}
+
+.menu-v {
+  @apply p-5;
+}
+
+.menuGrid {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 md:p-8 bg-opacity-50 bg-yellow-600 rounded-lg;
+}
+
+.gridItem {
+  @apply flex items-center bg-gray-700 bg-opacity-60 rounded-lg p-3;
+}
+
+.gridImage {
+  @apply h-20 w-20 sm:h-32 sm:w-32 md:h-40 object-cover md:w-40 rounded-3xl lg:h-60 lg:w-60;
+}
+
+.grid-iv {
+  @apply pl-4;
+}
+
+.gridTitle {
+  @apply text-lg sm:text-xl md:text-3xl font-bold;
+}
+
+.gridPg {
+  @apply text-xs sm:text-sm md:text-base lg:text-2xl mt-4;
+}
+
+.contactContainer {
+  @apply min-h-screen flex justify-center items-center flex-col;
+}
+
+.contactContent {
+  @apply p-4 sm:p-5 bg-opacity-50 bg-yellow-600 rounded-lg text-3xl;
+}
+
+.contactBox {
+  @apply bg-gray-600 bg-opacity-80 rounded-lg p-3 sm:p-5 text-xl sm:text-4xl;
+}
+
+.contactTitle {
+  @apply pb-10 font-semibold text-center;
+}
+
+.contactSpan {
+  @apply italic font-light;
+}

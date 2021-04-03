@@ -103,8 +103,8 @@ const image = () => {
   const imgTwo = document.createElement('img');
   imgOne.classList.add('gridImage');
   imgTwo.classList.add('gridImage');
-  imgOne.src = '../assets/img/6.jpg';
-  imgTwo.src = '../assets/img/11.png';
+  imgOne.src = './assets/img/6.jpg';
+  imgTwo.src = './assets/img/11.png';
   return { imgOne, imgTwo };
 };
 const boxInfo = () => {
