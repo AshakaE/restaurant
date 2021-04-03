@@ -12,8 +12,8 @@ homeDiv.classList.add(
 );
 content.appendChild(homeDiv);
 
-showNav()
-showHome()
+showNav();
+showHome();
 const tabs = document.querySelectorAll('.tab');
 const tabMethods = [showHome, showMenu, showContact];
 const home = document.querySelector('#home');

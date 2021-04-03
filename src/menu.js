@@ -47,11 +47,11 @@ const menuFunc = () => {
   const menuDiv = document.createElement('div');
   let box = boxElement();
   box = Object.entries(box);
-  box = box[0][1];
+  const [[, bx]] = box;
   menuDiv.id = 'menu';
   menuDiv.classList.add(
     'menu-bg',
-    'menuContainer'
+    'menuContainer',
   );
   heading.textContent = 'Special menu';
   heading.classList.add('menuTitle');
@@ -60,8 +60,8 @@ const menuFunc = () => {
   menuDiv.appendChild(heading);
   menuDiv.appendChild(container);
   container.appendChild(gridBox);
-  for (let a = 0; a < box.length; a += 1) {
-    gridBox.appendChild(box[a]);
+  for (let a = 0; a < bx.length; a += 1) {
+    gridBox.appendChild(bx[a]);
   }
   return menuDiv;
 };
@@ -69,5 +69,5 @@ const showMenu = () => {
   const homeDiv = document.querySelector('#home');
   const h = menuFunc();
   homeDiv.appendChild(h);
-}
+};
 export default showMenu;

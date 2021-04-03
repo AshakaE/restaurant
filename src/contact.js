@@ -6,7 +6,7 @@ const contactFunc = () => {
   const pTwo = document.createElement('p');
   const sOne = document.createElement('span');
   const sTwo = document.createElement('span');
-  const contactDiv= document.createElement('div');
+  const contactDiv = document.createElement('div');
   contactDiv.id = 'contact';
   contactDiv.classList.add('contact-bg', 'contactContainer');
   contactDivOne.classList.add('contactContent');
@@ -26,7 +26,7 @@ const contactFunc = () => {
   contactDivTwo.appendChild(pTwo);
   pOne.appendChild(sOne);
   pTwo.appendChild(sTwo);
-  contactDiv.style = 'width:100vw;'
+  contactDiv.style = 'width:100vw;';
   return contactDiv;
 };
 const showContact = () => {

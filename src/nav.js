@@ -22,7 +22,7 @@ const navFunc = (navDiv) => {
   navDiv.appendChild(navThree);
 
   return navDiv;
-}
+};
 
 const showNav = () => {
   content.insertAdjacentElement('beforebegin', navFunc(navDiv));
