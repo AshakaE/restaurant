@@ -1,18 +1,17 @@
-# Title TBA
+# Project Restaurant
 
-> Description TBA
+> This project is a restaurant webpage built with JavaScript by manipulating the Document object model(DOM) to create a dynamic webpage.
 
 ## Built With
 
 - JavaScript
 - HTML5
 - CSS3
+- TailwindCSS
 
 ## Live Demo
 
-TBA
-
-npm install --save-dev eslint@7.11.x eslint-config-airbnb@18.1.x eslint-plugin-import@2.22.x eslint-plugin-jsx-a11y@6.2.x eslint-plugin-react@7.20.x eslint-plugin-react-hooks@2.5.x babel-eslint@10.1.x
+[restaurant-js](https://ashakae.github.io/restaurant/)
 
 ## Getting Started
 
@@ -25,31 +24,28 @@ Node.js
 ### Setup
 
 - Clone the repository in the folder of your choice:<br> 
-
+-Install required dependencies `npm install`
 
 ### Usage
 
-- Start server with:
-
-
-### Run tests
-
+- open the `index.html` in dist folder
 
 
 ### Deployment
 
-TBA
+Deployed to Gh pages
 
 👤 **Ashaka Egerega**
 
 - GitHub: [@AshakaE](https://github.com/AshakaE)
+- Twitter: [@shaqzee_](https://twitter.com/shaqzee_)
 - LinkedIn: [AshakaE](https://www.linkedin.com/in/AshakaE/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/AshakaE/restaurant/issues).
 
 ## Show your support
 
@@ -57,7 +53,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+Microverse
+The Odin Project
 
 ## 📝 License
 
