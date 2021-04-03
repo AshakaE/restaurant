@@ -6,12 +6,15 @@ const navFunc = (navDiv) => {
   const navTwo = document.createElement('div');
   const navThree = document.createElement('div');
 
-  navDiv.classList.add('tabs', 'nav-container', 'text-white');
-  navOne.classList.add('home', 'nav-style', 'indicator');
+  navDiv.classList.add('tabs', 'nav-container');
+  navOne.classList.add('home', 'tab', 'nav-style', 'indicator');
+  navOne.id = 'hm';
   navOne.textContent = 'Home';
-  navTwo.classList.add('menu', 'nav-style');
+  navTwo.classList.add('menu', 'tab', 'nav-style');
+  navTwo.id = 'mn';
   navTwo.textContent = 'Menu';
-  navThree.classList.add('contact', 'nav-style');
+  navThree.classList.add('contact', 'tab', 'nav-style');
+  navThree.id = 'cn';
   navThree.textContent = 'Contact';
 
   navDiv.appendChild(navOne);
@@ -22,7 +25,7 @@ const navFunc = (navDiv) => {
 }
 
 const showNav = () => {
-  content.insertAdjacentElement('beforebegin', navFunc(navDiv))
-}
+  content.insertAdjacentElement('beforebegin', navFunc(navDiv));
+};
 
 export default showNav;

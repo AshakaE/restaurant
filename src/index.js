@@ -1,19 +1,30 @@
-import homeFunc from './home';
-import menuFunc from './menu';
-import contactFunc from './contact';
+import showHome from './home';
+import showMenu from './menu';
 import showNav from './nav';
-// import { showNav } from './page';
+import showContact from './contact';
 
 const content = document.getElementById('content');
 const homeDiv = document.createElement('div');
-const menuDiv = document.createElement('div');
-const contactDiv = document.createElement('div');
+homeDiv.id = 'home';
+homeDiv.classList.add(
+  'top-bg',
+  'homeContainer',
+);
+content.appendChild(homeDiv);
 
 showNav()
-const showContent = () => {
-  content.appendChild(homeFunc(homeDiv));
-  content.appendChild(menuFunc(menuDiv));
-  content.appendChild(contactFunc(contactDiv));
+showHome()
+const tabs = document.querySelectorAll('.tab');
+const tabMethods = [showHome, showMenu, showContact];
+const home = document.querySelector('#home');
+const openTab = (index) => {
+  home.innerHTML = '';
+  for (let i = 0; i < tabs.length; i += 1) {
+    tabs[i].classList.remove('indicator');
+  }
+  tabs[index].classList.add('indicator');
+  tabMethods[index]();
 };
-
-showContent();
+for (let i = 0; i < tabs.length; i += 1) {
+  tabs[i].onclick = openTab.bind(null, i);
+}
