@@ -711,7 +711,6 @@ video {
 	line-height: 1.75rem;
 	font-weight: 600;
 	text-transform: uppercase;
-  padding-top: 100px;
 }
 
 @media (min-width: 640px) {
@@ -727,6 +726,7 @@ video {
 	.menuTitle {
 		font-size: 2.25rem;
 		line-height: 2.5rem;
+    padding-top: 100px;
 	}
 }
 
