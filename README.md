@@ -26,7 +26,7 @@ Node.js
 ### Setup
 
 - Clone the repository in the folder of your choice:<br> 
--Install required dependencies `npm install`
+- Install required dependencies `npm install`
 
 ### Usage
 
