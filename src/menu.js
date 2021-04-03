@@ -1,6 +1,3 @@
-const content = document.getElementById('content');
-const menuDiv = document.createElement('div');
-
 const image = () => {
   const imgOne = document.createElement('img');
   const imgTwo = document.createElement('img');
@@ -8,10 +5,8 @@ const image = () => {
   imgTwo.classList.add('gridImage');
   imgOne.src = '../assets/img/6.jpg';
   imgTwo.src = '../assets/img/11.png';
-
   return { imgOne, imgTwo };
 };
-
 const boxInfo = () => {
   const infoDiv = document.createElement('div');
   const infoTitle = document.createElement('h4');
@@ -23,7 +18,6 @@ const boxInfo = () => {
   infoSub.textContent = 'Doloremque omnis exercitationem nulla ratione perferendis, quam, incidunt earum assumenda eius.';
   return { infoDiv, infoTitle, infoSub };
 };
-
 function boxElement() {
   const box = [];
   let pic = true;
@@ -46,11 +40,11 @@ function boxElement() {
   }
   return { box };
 }
-
-const menuFunc = (menuDiv) => {
+const menuFunc = () => {
   const heading = document.createElement('h2');
   const container = document.createElement('div');
   const gridBox = document.createElement('div');
+  const menuDiv = document.createElement('div');
   let box = boxElement();
   box = Object.entries(box);
   box = box[0][1];
@@ -63,7 +57,6 @@ const menuFunc = (menuDiv) => {
   heading.classList.add('menuTitle');
   container.classList.add('menu-v');
   gridBox.classList.add('menuGrid');
-
   menuDiv.appendChild(heading);
   menuDiv.appendChild(container);
   container.appendChild(gridBox);
@@ -72,9 +65,9 @@ const menuFunc = (menuDiv) => {
   }
   return menuDiv;
 };
-
 const showMenu = () => {
-  content.insertAdjacentElement('afterbegin', menuFunc(menuDiv));
+  const homeDiv = document.querySelector('#home');
+  const h = menuFunc();
+  homeDiv.appendChild(h);
 }
-
 export default showMenu;

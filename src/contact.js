@@ -1,7 +1,4 @@
-const content = document.getElementById('content');
-const contactDiv = document.createElement('div');
-
-const contactFunc = (contactDiv) => {
+const contactFunc = () => {
   const contactDivOne = document.createElement('div');
   const contactDivTwo = document.createElement('div');
   const title = document.createElement('h2');
@@ -31,11 +28,13 @@ const contactFunc = (contactDiv) => {
   pOne.appendChild(sOne);
   pTwo.appendChild(sTwo);
 
-  return contactDiv;
+  return contactDivOne;
 };
 
 const showContact = () => {
-  content.insertAdjacentElement('afterbegin', contactFunc(contactDiv));
-}
+  const homeDiv = document.querySelector('#home');
+  const h = contactFunc();
+  homeDiv.appendChild(h);
+};
 
 export default showContact;

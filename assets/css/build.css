@@ -599,7 +599,7 @@ video {
 	width: 33.333333%;
 	cursor: pointer;
 	justify-content: center;
-	padding-bottom: 1.5rem;
+	padding-bottom: 1rem;
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
@@ -620,7 +620,6 @@ video {
 	min-height: 100vh;
 	align-items: center;
 	justify-content: center;
-	padding: 1rem;
 }
 
 .homeContent {

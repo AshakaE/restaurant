@@ -25,7 +25,6 @@ const navFunc = (navDiv) => {
 }
 
 const showNav = () => {
-  // content.appendChild(navFunc(navDiv));
   content.insertAdjacentElement('beforebegin', navFunc(navDiv));
 };
 
