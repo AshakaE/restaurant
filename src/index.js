@@ -2,6 +2,7 @@ import showHome from './home';
 import showMenu from './menu';
 import showNav from './nav';
 import showContact from './contact';
+
 const content = document.getElementById('content');
 const homeDiv = document.createElement('div');
 homeDiv.id = 'home';

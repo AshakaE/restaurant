@@ -6,7 +6,7 @@ const contactFunc = () => {
   const pTwo = document.createElement('p');
   const sOne = document.createElement('span');
   const sTwo = document.createElement('span');
-
+  const contactDiv= document.createElement('div');
   contactDiv.id = 'contact';
   contactDiv.classList.add('contact-bg', 'contactContainer');
   contactDivOne.classList.add('contactContent');
@@ -19,7 +19,6 @@ const contactFunc = () => {
   sTwo.textContent = '+234-111-000-17';
   pOne.textContent = 'Email: ';
   pTwo.textContent = 'Phone: ';
-
   contactDiv.appendChild(contactDivOne);
   contactDivOne.appendChild(contactDivTwo);
   contactDivTwo.appendChild(title);
@@ -27,10 +26,9 @@ const contactFunc = () => {
   contactDivTwo.appendChild(pTwo);
   pOne.appendChild(sOne);
   pTwo.appendChild(sTwo);
-
-  return contactDivOne;
+  contactDiv.style = 'width:100vw;'
+  return contactDiv;
 };
-
 const showContact = () => {
   const homeDiv = document.querySelector('#home');
   const h = contactFunc();
