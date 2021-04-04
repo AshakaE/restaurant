@@ -1,16 +1,19 @@
-# Title TBA
+# Project Restaurant
 
-> Description TBA
+> This project is a restaurant webpage built with JavaScript by manipulating the Document object model(DOM) to create a dynamic webpage.
+
+<p align="center">
+  
+  <img src="./assets/img/screenpic.jpg" >
+  
+</p>
 
 ## Built With
 
 - JavaScript
 - HTML5
 - CSS3
-
-## Live Demo
-
-TBA
+- TailwindCSS
 
 ## Getting Started
 
@@ -23,31 +26,27 @@ Node.js
 ### Setup
 
 - Clone the repository in the folder of your choice:<br> 
-
+- Install required dependencies `npm install`
 
 ### Usage
 
-- Start server with:
-
-
-### Run tests
-
-
+- open the `index.html` in dist folder
 
 ### Deployment
 
-TBA
+[restaurant-js](https://ashakae.github.io/restaurant/)
 
 👤 **Ashaka Egerega**
 
 - GitHub: [@AshakaE](https://github.com/AshakaE)
+- Twitter: [@shaqzee_](https://twitter.com/shaqzee_)
 - LinkedIn: [AshakaE](https://www.linkedin.com/in/AshakaE/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/AshakaE/restaurant/issues).
 
 ## Show your support
 
@@ -55,7 +54,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+Microverse
+The Odin Project
 
 ## 📝 License
 

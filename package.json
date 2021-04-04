@@ -1,6 +1,23 @@
 {
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env TAILWIND_MODE=build postcss ./assets/css/tailwind/tailwind.css  -o ./assets/css/build.css --verbose",
+    "dev": "cross-env TAILWIND_MODE=watch postcss build ./assets/css/tailwind/tailwind.css -o ./assets/css/build.css -w --verbose",
+    "serve": "npx webpack --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/jit": "^0.1.17",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.4"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
